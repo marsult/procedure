@@ -1,0 +1,80 @@
+body {
+  background-color: rgba(33,33,33,.9)
+}
+.code-container {
+  display: flex;
+  position: relative;
+}
+
+.line-numbers {
+  counter-reset: line;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #888;
+  padding: 10px;
+  border-right: 1px solid #444;
+  width: 40px;
+  text-align: right;
+  white-space: nowrap;
+  background: rgba(13, 13, 13, 1);
+  height: auto;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.line-numbers span {
+  counter-increment: line;
+  display: block;
+  padding-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden;
+  tab-size: 2;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+  background: rgba(13, 13, 13, 1);
+  color: #fbfbfb;
+  cursor: text;
+  outline: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+textarea::selection {
+  background-color: rgba(152, 255, 152, 1);
+  color:rgba(0, 51, 102, 1);
+}
+
+.line-numbers, textarea {
+  font-size: 1.1em;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.copy-btn {
+  background-color: rgba(47, 47, 47, 1);
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  position: absolute;
+  
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+}
